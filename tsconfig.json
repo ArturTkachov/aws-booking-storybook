@@ -11,8 +11,13 @@
     "allowImportingTsExtensions": true,
     "resolveJsonModule": true,
     "isolatedModules": true,
-    "noEmit": true,
+    "composite": true,
+//    "noEmit": true,
+//    "declaration": true,
+    "emitDeclarationOnly": true,
+    "declarationMap": true,
     "jsx": "react-jsx",
+    "outDir": "dist",
 
     /* Linting */
     "strict": true,
@@ -20,7 +25,7 @@
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true,
     "strictNullChecks": true,
-    "noImplicitAny": true,
+    "noImplicitAny": true
   },
   "include": ["src"],
   "exclude": ["node_modules"],
