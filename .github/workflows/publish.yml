@@ -18,7 +18,7 @@ jobs:
       - run: |
           echo @lexacode:https://npm.pkg.github.com/ > dist/.npmrc
           echo '//npm.pkg.github.com/:_authToken=${NPM_TOKEN}' >> dist/.npmrc
-      - run: ls -a
+      - run: ls -a # d
       - run: npm publish
 #        working-directory: ./dist
         env:
