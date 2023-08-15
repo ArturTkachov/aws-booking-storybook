@@ -16,8 +16,10 @@ jobs:
       - run: npm ci
       - run: npm run build
       - run: |
-          echo @lexacode:https://npm.pkg.github.com/ > dist/.npmrc
-          echo '//npm.pkg.github.com/:_authToken=${NPM_TOKEN}' >> dist/.npmrc
+          echo @arturtkachov:https://npm.pkg.github.com/ > .npmrc
+          echo '//npm.pkg.github.com/:_authToken=${NPM_TOKEN}' >> .npmrc
+#          echo @lexacode:https://npm.pkg.github.com/ > dist/.npmrc
+#          echo '//npm.pkg.github.com/:_authToken=${NPM_TOKEN}' >> dist/.npmrc
       - run: ls -a # d
       - run: npm publish
 #        working-directory: ./dist
