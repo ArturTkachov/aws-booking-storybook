@@ -2,7 +2,7 @@
   "name": "@arturtkachov/aws-booking-storybook",
   "license": "UNLICENSED",
   "repository": "https://github.com/ArturTkachov/aws-booking-storybook.git",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "type": "module",
   "main": "dist/main.js",
   "module": "dist/main.js",
